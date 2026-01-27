@@ -356,4 +356,86 @@ print(sub_list)  # Output: [20, 40, 60]
 
 ---
 
-## Continue at section 6.7
+# Loops modifying lists
+
+---
+
+## Changing elements' values
+
+_You can change the values of elements in a list while iterating over it using their indices._
+
+```python
+my_list = [3.2, 5.0, 16.5, 12.25]
+
+for i in range(len(my_list)):
+    my_list[ i ] += 5
+```
+
+---
+
+## Changing list size
+
+_Adding elements to a list while iterating over it can lead to unexpected behavior._
+
+```python
+my_list = [1, 3, 3, 4, 5, 7, 7, 8, 9]
+for item in my_list[:]:
+	if item % 2 != 0:
+		my_list.remove(item)
+```
+
+_This code may not remove all odd numbers as expected because the list size changes during iteration._
+
+---
+
+# List Comprehensions
+
+---
+
+## List Comprehensions
+
+- **list comprehension** - The Python language provides a convenient construct, known as list comprehension, that iterates over a list, modifies each element, and returns a new list of the modified elements.
+
+```python
+new_list = [expression for loop_variable_name in iterable]
+```
+
+---
+
+## List Comprehension Example
+
+_Explain what the code does:_
+
+_What is this codes output?_
+
+```python
+numbers = [5, 10, 15, 20]
+
+new_nums = [num / 5 for num in numbers]
+
+print(new_nums)
+```
+
+---
+
+## Conditional list comprehensions
+
+- **conditional list comprehension** - A conditional list comprehension includes an if statement to filter elements from the original list before applying the expression.
+
+```python
+user_input = input("Enter numbers separated by spaces: ")
+tokens = user_input.split()
+numbers = [int(token) for token in tokens if token.isdigit()]
+print("Valid numbers are:", numbers)
+```
+
+---
+
+## List Comprehension Exercises
+
+```python
+def square_even_numbers(numbers):
+	# Your code here
+
+squares = square_even_numbers([1, 2, 3, 4, 5, 6])
+```
