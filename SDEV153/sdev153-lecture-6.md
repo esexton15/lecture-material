@@ -58,8 +58,6 @@ Three big layers:
 2. **Layout modes** (`block`, `inline`, `flex`)
 3. **Positioning** (`relative`, `absolute`, `fixed`, `sticky`)
 
-Most page layout bugs come from mixing 2 & 3 without understanding 1.
-
 ---
 
 ## Normal flow
@@ -67,31 +65,6 @@ Most page layout bugs come from mixing 2 & 3 without understanding 1.
 - **Block elements** stack top-to-bottom
 - **Inline elements** flow left-to-right and wrap
 - Parent height normally depends on its children (unless children are positioned)
-
-If you know the defaults, you can predict 80% of layouts.
-
----
-
-## Layout rule #1: pick a container
-
-Most good layouts start by choosing a “main container” and constraining it.
-
-Concepts:
-
-- `max-width` for readable line length
-- `margin: 0 auto` to center the container
-- predictable padding inside
-
----
-
-## Layout rule #2: avoid magic numbers
-
-Things that cause pain:
-
-- lots of `position: absolute` for layout
-- random pixel margins “until it looks right”
-
-Prefer flow + flex + spacing utilities.
 
 ---
 
@@ -367,7 +340,7 @@ Suggestion:
 
 ---
 
-## Responsive rule #1: let things be fluid
+## Tip #1: let things be fluid
 
 Prefer:
 
@@ -382,18 +355,7 @@ Avoid:
 
 ---
 
-## Responsive rule #2: choose breakpoints intentionally
-
-Breakpoints should respond to layout needs, not device names.
-
-Example thinking:
-
-- “cards no longer fit in 3 columns → switch to 2”
-- “nav links wrap → switch to stacked/collapsed”
-
----
-
-## Responsive images (common layout breaker)
+## Tip #2: Responsive images
 
 Must-have concept:
 
@@ -446,7 +408,7 @@ Live demo: minimal “reset” (not a giant framework).
 
 ---
 
-## 5-minute practice prompts
+## 10-minute practice prompts
 
 1. Build a nav: logo left, links right, centered vertically
 2. Build a card row that wraps with consistent gaps
