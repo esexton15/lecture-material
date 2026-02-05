@@ -1073,21 +1073,6 @@ If your results surprise you, your condition is probably wrong.
 
 ---
 
-## Exit ticket (5–8 minutes)
-
-Write a program that reads an integer `temp` and outputs:
-
-- `Too cold` if `temp < 8`
-- `Satisfactory` if `8 <= temp <= 26`
-- `Too hot` if `temp > 26`
-
-Requirements:
-
-- Use `if/elif/else`
-- Use operator chaining for the middle case
-
----
-
 ## Next lecture (this week)
 
 - Turn repeated decision logic into **functions**
