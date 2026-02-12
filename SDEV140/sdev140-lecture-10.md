@@ -48,17 +48,6 @@ By the end of class you can:
 - Describe how the import process works at a high level
 - Use exceptions to handle errors (coming next)
 
-## <!--
-
-## 2-chapter flow (brief)
-
-- Modules: what they are, how imports work, using module names
-- Exceptions: why they exist, try/except basics, common patterns
-
----
-
--->
-
 ---
 
 # Part 1 — Modules
@@ -330,39 +319,6 @@ Use this pattern:
 if __name__ == "__main__":
     # run the script UI
 ```
-
----
-
-## WebSearch (fixed)
-
-```python
-# WebSearch.py
-import googlesearch as gs
-
-def searchTerm(term):
-	# ...
-
-def stringifyResult(term, domains, domainString):
-	# ...
-
-if __name__ == "__main__":
-	print("Welcome to Web Search")
-	term = input("Enter search term: ")
-	result = searchTerm(term)
-	resultString = ""
-	resultString = stringifyResult(term, result, resultString)
-	print(resultString)
-	print("\nEnd of Web Search")
-```
-
----
-
-## Why this fixes the problem
-
-- Executing `WebSearch.py` runs the UI code.
-- Importing it does **not** run the UI code.
-
-This keeps reusable functions clean and avoids side effects.
 
 ---
 
