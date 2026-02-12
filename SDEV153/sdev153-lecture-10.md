@@ -39,6 +39,7 @@ h1 {
 
 ---
 
+<!--
 ## Today’s outcomes
 
 By the end of class you can:
@@ -59,7 +60,7 @@ By the end of class you can:
 - **1:30-1:50** UX, navigation, and engagement (6.3)
 - **1:50-2:00** SEO audit checklist + wrap-up
 
----
+--- -->
 
 # Part 1 - What is SEO
 
@@ -77,13 +78,20 @@ Goal: match **user intent** with **useful content**.
 
 ---
 
-## How search engines rank pages
+## How search works (and why it ranks pages)
 
-Search engines consider hundreds of signals, but the big buckets are:
+Search engines:
 
-- relevance (does the page match the query?)
-- quality (is the content helpful and trustworthy?)
-- usability (is the site fast, clear, and easy to use?)
+- **crawl** pages, then **index** content (text, images, video)
+- **serve** results based on ranking factors
+
+Ranking factors (concepts):
+
+- meaning of the query (intent)
+- relevance of the page
+- content quality
+- usability
+- context/settings (location, language, history)
 
 ---
 
@@ -97,6 +105,19 @@ Common intent types:
 - **Local:** near me / in a place
 
 Matching intent is core to ranking.
+
+---
+
+## SERPs and features (what shows up)
+
+Search results can include:
+
+- paid ads and organic listings
+- featured snippet (answer box)
+- rich results (ratings, price, availability)
+- images, videos, local pack (map + listings)
+
+The layout changes based on the query and intent.
 
 ---
 
@@ -137,83 +158,53 @@ Your job is to:
 
 ---
 
-## Map keywords to pages
+## Keyword research (fast version)
+
+Find how people _actually_ search:
+
+- autocomplete and related searches
+- customer questions and reviews
+- Search Console queries
+- competitor pages
+
+Examples:
+
+- couch vs. sofa vs. sectional
+- "wedding photographer denver" vs. "denver wedding photos"
+
+---
+
+## Map + place keywords
 
 Each important page should target:
 
-- **one primary keyword** (main topic)
-- **a few related keywords** (variations, synonyms)
+- **one primary keyword**
+- a few related variations
 
-Avoid using the same primary keyword on many pages.
+Place the primary keyword in:
 
----
-
-## Strategic keyword placement
-
-Best places to include the primary keyword:
-
-- page title (title tag)
-- H1 heading
-- first 100 words of content
-- subheadings (H2/H3)
-- URL (short and clear)
-- image alt text (when relevant)
+- title tag, H1, first 100 words
+- subheadings, URL, relevant alt text
 
 ---
 
-## Title tag vs. H1
+## Titles, H1s, and meta descriptions
 
-- **Title tag** shows in search results and browser tabs
-- **H1** is the visible page headline
+- **Title tag** shows in search results
+- **H1** is the page headline
+- **Meta description** drives clicks
 
-They should be similar, but not identical.
-
----
-
-## Example: title + H1
-
-Bad:
-
-- Title: "Home"
-- H1: "Welcome"
-
-Better:
-
-- Title: "Denver Wedding Photography - Bright Leaf Studio"
-- H1: "Wedding Photography in Denver"
+Keep them aligned with the primary keyword.
 
 ---
 
-## Meta description (click-through)
-
-Not a ranking factor, but influences clicks.
-
-Good meta descriptions:
-
-- summarize the page in 1-2 sentences
-- include the primary keyword
-- set a clear expectation
-
----
-
-## On-page HTML example
-
-```html
-<title>Beginner Yoga Classes in Bloomington</title>
-<h1>Beginner Yoga Classes in Bloomington</h1>
-<p>Join small-group yoga classes designed for new students...</p>
-<h2>Class schedule</h2>
-<img src="studio.jpg" alt="Yoga studio in Bloomington" />
-```
-
----
-
-## Keyword best practices
+## Keyword best practices (and what to avoid)
 
 - write for humans first
-- use natural variations (not repetition)
-- avoid stuffing in every sentence
-- make sure the page actually answers the search
+- use natural variations
+- do not keyword-stuff
+
+Stuffing hurts trust, usability, and rankings.
 
 ---
 
@@ -242,7 +233,7 @@ Ask:
 
 ---
 
-## Content structure that works
+## Structure + freshness
 
 Simple structure for most pages:
 
@@ -251,23 +242,7 @@ Simple structure for most pages:
 3. examples, steps, or visuals
 4. summary or next action
 
----
-
-## Avoid thin content
-
-Thin pages usually have:
-
-- vague or generic text
-- copied descriptions
-- no unique value
-
-Better: add specifics, examples, and context.
-
----
-
-## Refresh and maintain
-
-Search engines value freshness when it matters.
+Avoid thin content (generic, copied, vague). Refresh when needed:
 
 - update stats and dates
 - fix broken links
@@ -303,58 +278,36 @@ Use clear menus and consistent labels.
 
 ---
 
-## Information architecture
+## Structure + crawlability
 
-Organize content by topic:
+Keep the site easy to navigate and easy to crawl:
 
-- broad category pages
-- narrower subpages
-- internal links between related pages
+- clear hierarchy (category -> subpage -> detail)
+- pages within 3-4 clicks of the homepage
+- every page reachable via links
 
-This also helps search engines discover pages.
-
----
-
-## Layout and readability
-
-Improve readability with:
-
-- short paragraphs
-- bullets and subheads
-- visual hierarchy (H1 > H2 > H3)
-- contrast and spacing
+This helps both users and search engines.
 
 ---
 
-## Mobile-first mindset
+## URLs + trust signals
 
-Most traffic is mobile. Make sure:
+- short, readable URLs with meaningful words
+- helpful 404 page (links back + popular pages)
+- HTTPS everywhere (security + trust)
 
-- text is readable without zoom
-- buttons are easy to tap
-- menus are simple
-
----
-
-## Site speed basics
-
-Fast pages keep users and help ranking.
-
-Quick wins:
-
-- compress images
-- avoid huge video files
-- reduce unnecessary scripts
+Clean URLs can appear in search results.
 
 ---
 
-## Accessibility supports SEO
+## UX essentials (readability, mobile, speed, accessibility)
 
-Accessibility helps users and search engines.
+Quick wins that improve engagement and SEO:
 
-- semantic headings
-- alt text for images
-- descriptive link text
+- short paragraphs, clear headings, good contrast
+- mobile-friendly text and tap targets
+- faster pages (compress images, avoid heavy scripts)
+- accessible content (semantic headings, alt text, descriptive links)
 
 ---
 
@@ -371,8 +324,6 @@ Accessibility helps users and search engines.
 - internal links added
 - images optimized with alt text
 - content is unique and useful
-
----
 
 ## Key takeaways
 
